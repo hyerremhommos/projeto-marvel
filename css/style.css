@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
+
+:root {
+    --fonte-especial: 'Goldman', sans-serif;
+    --cor-especial: #DAA520;
+    --cor-fonte: whitesmoke;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--cor-fonte);
+    font-family: var(--fonte-especial);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 170px;
+    height: 100px;
+}
+
+ul li {
+    display: inline-block;
+    margin: 20px;
+}
+
+ul li a {
+    color: var(--cor-fonte);
+    font-size: 17px;
+    transition: 0.2s all;
+}
+
+ul li a:hover {
+    color: var(--cor-especial);
+}
+
+#btn-menu {
+    border: 2px solid var(--cor-especial);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#btn-menu:hover {
+    background-color: var(--cor-especial);
+    color: var(--cor-fonte);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.texto h1 {
+    font-size: 48px;
+    line-height: 40px;
+}
+
+.texto p {
+    font-weight: lighter;
+    font-size: 18px;
+    text-align: justify;
+    max-width: 450px;
+    line-height: 18px;
+    margin: 16px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+input {
+    margin-bottom: 20px;
+    height: 20px;
+    border-radius: 20px;
+    border: none;
+    padding: 18px;
+    font-size: 15px;
+}
+
+form [type="submit"]{
+    width: 50%;
+    height: 50px;
+    background-color: var(--cor-especial);
+    color: var(--cor-fonte);
+    font-weight: bold;
+}
+
+form [type="submit"]:hover {
+    cursor: pointer;
+}
+
+span {
+    color: var(--cor-especial);
+}
+
+.imagem img {
+    width: 630px;
+}
